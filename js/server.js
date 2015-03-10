@@ -1,5 +1,7 @@
 /* jshint node: true */
 
+'use strict';
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var Post = require('./models/post');
@@ -32,7 +34,7 @@ app.post('/api/posts', function(req, res, next) {
 
   post.save(function(err, post) {
     var result = null;
-    if (err) {
+    if (err) { 
       result = next(err);
     } else {
       result = res.status(201).json(post);
