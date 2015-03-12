@@ -34,7 +34,7 @@ app.post('/api/posts', function(req, res, next) {
 
   post.save(function(err, post) {
     var result = null;
-    if (err) { 
+    if (err) {
       result = next(err);
     } else {
       result = res.status(201).json(post);

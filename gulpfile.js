@@ -1,13 +1,11 @@
 /* jshint node:true */
 
-var GULP = (function() {
+(function() {
 
   'use strict';
 
   var gulp = require('gulp');
   var jshint = require('gulp-jshint');
-  var jscs = require('gulp-jscs');
-  var stylish = require('gulp-jscs-stylish');
 
   gulp.task('jshint', function() {
     return gulp.src('js/**/*.js')
