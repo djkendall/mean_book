@@ -1,3 +1,5 @@
+'use strict';
+
 var Post = require('../../models/post');
 var router = require('express').Router();
 
